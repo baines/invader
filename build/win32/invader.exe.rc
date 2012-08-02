@@ -1,0 +1,25 @@
+id ICON "inv.ico"
+1 VERSIONINFO
+FILEVERSION     1,0,0,0
+PRODUCTVERSION  1,0,0,0
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "080904E4"
+    BEGIN
+      VALUE "CompanyName", "Alex Baines"
+      VALUE "FileDescription", "Invader from Space"
+      VALUE "FileVersion", "1.0"
+      VALUE "InternalName", "invader"
+      VALUE "LegalCopyright", "Alex Baines"
+      VALUE "OriginalFilename", "invader.exe"
+      VALUE "ProductName", "Invader from Space"
+      VALUE "ProductVersion", "1.0"
+    END
+  END
+
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x809, 1252
+  END
+END
