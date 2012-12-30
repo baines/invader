@@ -2,6 +2,7 @@
 #include "renderer.h"
 #include "ringbuff.h"
 #include "sprite.h"
+#include "icon.h"
 
 Renderer::Renderer(int w, int h,const char* caption):textureMgr(gl),gl(320,240){
 	if (SDL_InitSubSystem(SDL_INIT_VIDEO) != 0){
@@ -17,7 +18,7 @@ Renderer::Renderer(int w, int h,const char* caption):textureMgr(gl),gl(320,240){
 	windowed_h = h;
 		
 	reload(w, h, SDL_OPENGL | SDL_ANYFORMAT);
-	SDL_Delay(200);
+	setIcon();
 }
 
 void Renderer::reload(int w, int h, int flags){
